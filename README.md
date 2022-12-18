@@ -7,6 +7,14 @@ An automated APT repository for hosting `.deb` files.
 not synced with the latest version at [GitHub](https://github.com/TheClockTwister/apt-repo).
 If you need information, consult the gitHub page.**
 
+## Features
+
+- Plug & Play: just dump all your `.deb` files in a single folder
+- Nginx backend
+- Automated indexing & repository signing
+- Automatically renames `.deb` files to correct Debian format
+- Can be made fully-autonomous with a simple crontab one-liner
+
 
 ## Getting Started
 
@@ -55,3 +63,11 @@ services:
   ```
   0 3   * * *   root    docker exec -it <container_name> update-repo
   ```
+
+## Customization
+
+### Custom Nginx Configuration
+
+The Nginx configuration is located at `/etc/nginx/nginx.conf`. You can copy
+it outside of a running container, make modifications as you please and mount
+your customized version as a volume to `/etc/nginx/nginx.conf`.
