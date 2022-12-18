@@ -57,6 +57,6 @@ jobs:
         with:
           builder: ${{ steps.buildx.outputs.name }}
           context: ./apt-repo
-          platforms: linux/amd64,linux/arm64,linux/armv7
+          platforms: linux/amd64,linux/arm64,linux/arm
           push: true
           tags: ${{ steps.prep.outputs.tags }}
