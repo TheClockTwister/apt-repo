@@ -1,0 +1,20 @@
+version: '3'
+services:
+
+  repo:
+    build: ./apt-repo
+    container_name: repo
+    ports:
+      - 8000:80   # HTTP default port
+    volumes:
+      # This is the folder where you just dump all your .deb files.
+      # We mount with R/W, because the image automatically renames
+      # the .deb files to the correct Debian format
+      - ./repo:/http/debs:rw
+      # Read-only, so noone can mess with our key file. The key is
+      # needed if you want to host a signed repo. It's not hard to
+      # generate a simple gpg key, so I highly suggest you dot it!
+      - ./private.key:/private.key:ro
+      # This where all the Nginx logs go. This can get quite full
+      # over time. So eitehr coean it, or ommit it
+      - ./logs:/logs

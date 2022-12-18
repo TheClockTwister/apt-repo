@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo "Updating repository..."
+cd /http
+
+KEY_ID=$(gpg --import --import-options show-only /private.key | sed -n '2p' | sed "s/ //g")
+
+dpkg-name ./debs/*.deb &> /dev/null
+apt-ftparchive packages ./ > Packages
+pigz -p $(nproc) -c -9 Packages > Packages.gz
+xz -T $(nproc) -c9 Packages > Packages.xz
+xz -T $(nproc) -q -5fkev --format=lzma Packages > Packages.lzma
+
+apt-ftparchive contents ./ > Contents
+pigz -p $(nproc) -c -9 Contents > Contents.gz
+xz -T $(nproc) -c9 Contents > Contents.xz
+xz -T $(nproc) -q -5fkev --format=lzma Contents > Contents.lzma
+
+apt-ftparchive  release  \
+    -o APT::FTPArchive::Release::Suite="stable" \
+    . > Release
+
+gpg --yes -abs -u $KEY_ID -o Release.gpg Release
+gpg --yes --export $KEY_ID > public.gpg
