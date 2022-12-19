@@ -2,7 +2,7 @@ FROM nginx:latest
 
 
 RUN apt-get update
-RUN apt-get install -y gnupg apt-utils dpkg xz-utils pigz
+RUN apt-get install -y gnupg apt-utils dpkg-dev xz-utils pigz
 RUN apt-get clean
 
 RUN mkdir -p /http/debs /logs
