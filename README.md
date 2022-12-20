@@ -25,7 +25,7 @@ version: '3'
 services:
 
   repo:
-    build: ./apt-repo
+    image: theclocktwister/apt-repo:latest
     container_name: repo
     ports:
       - 8000:80   # HTTP default port

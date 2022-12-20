@@ -1,24 +1,53 @@
 #!/bin/bash
 
-echo "Updating repository..."
+echo ""
+echo "Updating repository:"
+echo ""
+
+C=1
+N=7
+
+print_step () {
+  echo "  [$C/$N] $1"
+  C=$((C+1))
+}
+
 cd /http
 
-KEY_ID=$(gpg --import --import-options show-only /private.key | sed -n '2p' | sed "s/ //g")
+# try to import the key
+gpg --import /private.key &> /dev/null
+# if scucessful, KEY_ID is extracted
+KEY_ID=$( gpg --quiet --import --import-options show-only /private.key 2> /dev/null | sed -n '2p' | sed "s/ //g"  )
 
+
+print_step "Renaming .deb packages..."
 dpkg-name ./debs/*.deb &> /dev/null
+
+print_step "Building package index..."
 apt-ftparchive packages ./ > Packages
+
+print_step "Compressing package index..."
 pigz -p $(nproc) -c -9 Packages > Packages.gz
 xz -T $(nproc) -c9 Packages > Packages.xz
 xz -T $(nproc) -q -5fkev --format=lzma Packages > Packages.lzma
 
+print_step "Building content index..."
 apt-ftparchive contents ./ > Contents
+
+print_step "Compressing content index..."
 pigz -p $(nproc) -c -9 Contents > Contents.gz
 xz -T $(nproc) -c9 Contents > Contents.xz
 xz -T $(nproc) -q -5fkev --format=lzma Contents > Contents.lzma
 
+print_step "Creating release..."
 apt-ftparchive  release  \
     -o APT::FTPArchive::Release::Suite="stable" \
     . > Release
 
-gpg --yes -abs -u $KEY_ID -o Release.gpg Release
-gpg --yes --export $KEY_ID > public.gpg
+print_step "Signing release (if key is present)..."
+gpg --quiet --yes -abs -u $KEY_ID -o Release.gpg Release 2> /dev/null
+gpg --quiet --yes --export $KEY_ID > public.gpg 2> /dev/null
+
+echo ""
+echo "Update finished."
+echo ""
