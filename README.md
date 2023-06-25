@@ -1,5 +1,10 @@
 
 # APT Package Repository [>GitHub](https://github.com/TheClockTwister/apt-repo)
+![docker](https://img.shields.io/badge/docker-i386-blue?style=flat)
+![docker](https://img.shields.io/badge/docker-amd64-blue?style=flat)
+![docker](https://img.shields.io/badge/docker-armhf-blue?style=flat)
+![docker](https://img.shields.io/badge/docker-arm64-blue?style=flat)
+![size](https://img.shields.io/badge/size-916MB-yellow?style=flat)
 
 An automated APT repository for hosting `.deb` files.
 
@@ -27,6 +32,9 @@ services:
   repo:
     image: theclocktwister/apt-repo:latest
     container_name: repo
+    environment:
+      API_USERNAME: "username"
+      API_PASSWORD: "some-password"
     ports:
       - 8000:80   # HTTP default port
     volumes:
@@ -43,14 +51,13 @@ services:
       - ./logs:/logs
 ```
 
-### Rebuilding Package Index
+## Rebuilding Package Index
 
 - **You need to do this when `.deb` files are added, changed or deleted.**
 
-- To re-index the `.deb` files present in your repository, just run
-  the following command inside your container. This can be done with
-  just a single line:
+- This can be done via the [API](#api)
 
+- Or from the command inside your container:
   ```bash
   docker exec -it <container_name> update-repo
   ```
@@ -63,6 +70,17 @@ services:
   ```
   0 3   * * *   root    docker exec -it <container_name> update-repo
   ```
+
+## API
+
+The exposed Nginx web server also features an `/api` endpoint which allows for
+management of the repository via HTTP.
+
+|Method | Endpoint   | Usage
+|-------|------------|-------
+| GET   | `/api/update-repo` | Poll to re-generate metadata like "Contents", "Package" and "Release" and their compressed versions
+| POST  | `/api/upload-deb` | Upload/Patch .deb files to the repository (does not update metadata)
+
 
 ## Customization
 

@@ -1,4 +1,6 @@
 #!/bin/bash
 gpg --import /private.key
 
-update-repo
+nginx -g 'daemon on;'
+cd /api
+node index.js
