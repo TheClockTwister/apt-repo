@@ -1,6 +1,6 @@
 #!/bin/bash
 gpg --import /private.key
 
-# nginx -g 'daemon on;'
+service nginx start
 cd /api
 node index.js
