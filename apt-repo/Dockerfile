@@ -1,8 +1,7 @@
-FROM nginx:latest
-
+FROM node:lts-bullseye-slim
 
 RUN apt-get update
-RUN apt-get install -y gnupg apt-utils dpkg-dev xz-utils pigz nodejs npm
+RUN apt-get install --no-install-revommends -y gnupg apt-utils dpkg-dev xz-utils pigz nginx
 RUN apt-get clean
 
 ENV HTTP_DIR=/http
