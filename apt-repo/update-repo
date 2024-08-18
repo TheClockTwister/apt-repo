@@ -27,30 +27,30 @@ print_step "Building package index..."
 apt-ftparchive packages ./ > Packages
 
 print_step "Compressing package index..."
-echo "    -> using zstd..."
+echo "          -> using zstd..."
 zstd -T$(nproc) -q --format=zstd Packages
-echo. "    -> using gzip..."
+echo "          -> using gzip..."
 zstd -T$(nproc) -q --format=gzip Packages
-echo "    -> using xz..."
+echo "          -> using xz..."
 zstd -T$(nproc) -q --format=xz Packages
-echo "    -> using lzma..."
+echo "          -> using lzma..."
 zstd -T$(nproc) -q --format=lzma Packages
-echo "    -> using lz4..."
+echo "          -> using lz4..."
 zstd -T$(nproc) -q --format=lz4 Packages
 
 print_step "Building content index..."
 apt-ftparchive contents ./ > Contents
 
 print_step "Compressing content index..."
-echo "    -> using zstd..."
+echo "          -> using zstd..."
 zstd -T$(nproc) -q --format=zstd Contents
-echo "    -> using gzip..."
+echo "          -> using gzip..."
 zstd -T$(nproc) -q --format=gzip Contents
-echo "    -> using xz..."
+echo "          -> using xz..."
 zstd -T$(nproc) -q --format=xz Contents
-echo "    -> using lzma..."
+echo "          -> using lzma..."
 zstd -T$(nproc) -q --format=lzma Contents
-echo "    -> using lz4..."
+echo "          -> using lz4..."
 zstd -T$(nproc) -q --format=lz4 Contents
 
 print_step "Creating release..."
