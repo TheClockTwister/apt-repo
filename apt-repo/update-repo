@@ -28,30 +28,30 @@ apt-ftparchive packages ./ > Packages
 
 print_step "Compressing package index..."
 echo "          -> using zstd..."
-zstd -T$(nproc) -q --format=zstd Packages
+zstd -f -T$(nproc) -q --format=zstd Packages
 echo "          -> using gzip..."
-zstd -T$(nproc) -q --format=gzip Packages
+zstd -f -T$(nproc) -q --format=gzip Packages
 echo "          -> using xz..."
-zstd -T$(nproc) -q --format=xz Packages
+zstd -f -T$(nproc) -q --format=xz Packages
 echo "          -> using lzma..."
-zstd -T$(nproc) -q --format=lzma Packages
+zstd -f -T$(nproc) -q --format=lzma Packages
 echo "          -> using lz4..."
-zstd -T$(nproc) -q --format=lz4 Packages
+zstd -f -T$(nproc) -q --format=lz4 Packages
 
 print_step "Building content index..."
 apt-ftparchive contents ./ > Contents
 
 print_step "Compressing content index..."
 echo "          -> using zstd..."
-zstd -T$(nproc) -q --format=zstd Contents
+zstd -f -T$(nproc) -q --format=zstd Contents
 echo "          -> using gzip..."
-zstd -T$(nproc) -q --format=gzip Contents
+zstd -f -T$(nproc) -q --format=gzip Contents
 echo "          -> using xz..."
-zstd -T$(nproc) -q --format=xz Contents
+zstd -f -T$(nproc) -q --format=xz Contents
 echo "          -> using lzma..."
-zstd -T$(nproc) -q --format=lzma Contents
+zstd -f -T$(nproc) -q --format=lzma Contents
 echo "          -> using lz4..."
-zstd -T$(nproc) -q --format=lz4 Contents
+zstd -f -T$(nproc) -q --format=lz4 Contents
 
 print_step "Creating release..."
 apt-ftparchive  release  \
