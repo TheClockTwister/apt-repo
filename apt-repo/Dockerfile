@@ -1,7 +1,7 @@
 FROM node:bullseye-slim
 
 RUN apt-get update
-RUN apt-get install --no-install-recommends -y gnupg apt-utils dpkg-dev xz-utils pigz nginx
+RUN apt-get install --no-install-recommends -y gnupg apt-utils dpkg-dev zstd nginx
 RUN apt-get clean
 
 ENV HTTP_DIR=/http
