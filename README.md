@@ -3,7 +3,7 @@
 ![docker](https://img.shields.io/badge/docker-amd64-blue?style=flat)
 ![docker](https://img.shields.io/badge/docker-armhf-blue?style=flat)
 ![docker](https://img.shields.io/badge/docker-arm64-blue?style=flat)
-![size](https://img.shields.io/badge/size-595_MB-yellow?style=flat)
+![size](https://img.shields.io/badge/size-104_MB-green?style=flat)
 
 An automated APT repository for hosting `.deb` files.
 
