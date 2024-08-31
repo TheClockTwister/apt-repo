@@ -1,10 +1,8 @@
 
 # APT Package Repository [>GitHub](https://github.com/TheClockTwister/apt-repo)
-![docker](https://img.shields.io/badge/docker-i386-blue?style=flat)
 ![docker](https://img.shields.io/badge/docker-amd64-blue?style=flat)
 ![docker](https://img.shields.io/badge/docker-armhf-blue?style=flat)
 ![docker](https://img.shields.io/badge/docker-arm64-blue?style=flat)
-![docker](https://img.shields.io/badge/docker-s390x-blue?style=flat)
 ![size](https://img.shields.io/badge/size-595_MB-yellow?style=flat)
 
 An automated APT repository for hosting `.deb` files.
