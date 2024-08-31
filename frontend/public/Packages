@@ -1,0 +1,303 @@
+Package: dive
+Architecture: amd64
+Version: 0.11.0
+Priority: optional
+Maintainer: Alex Goodman
+Installed-Size: 9556
+Filename: ./debs/dive_0.11.0_amd64.deb
+Size: 4012702
+MD5sum: 931b4b341dfa9b432fc6233754b64026
+SHA1: 007da3b54c1a48d9ed0fe77dc5f1f514fdb621de
+SHA256: 7162a2ef4488589b9971ccfc0771741cf6496f1134caa90360b96816e1b9fb12
+SHA512: f60a698dd8751a604b3f57e644b5ddbcbf32c06ddcc430e484d595413aaf5daab6cd0b782c98bb6b17273991b89b5fff20beb11d3104ab3a0ef7d171939739fd
+Homepage: https://github.com/wagoodman/dive/
+Description: A tool for exploring layers in a docker image
+
+Package: dive
+Architecture: arm64
+Version: 0.11.0
+Priority: optional
+Maintainer: Alex Goodman
+Installed-Size: 9024
+Filename: ./debs/dive_0.11.0_arm64.deb
+Size: 3649648
+MD5sum: 47929cc32610a7a92cac6628e84f4aa7
+SHA1: f65b51970e602f7bbadc7a109200d97c50661858
+SHA256: 30b84b34cbefaf1232f6031b6db2ce7db789d831d07f3271a3307fa46854f519
+SHA512: cbeaf05a25141bacb2fe9def0b22f68d8d86a9467488b7cbaab5b10eb64f5455b34b0a87cbde75af2e5d07f4deb24236865a2e76eaa65416f11e87a5cde7357e
+Homepage: https://github.com/wagoodman/dive/
+Description: A tool for exploring layers in a docker image
+
+Package: fwtest
+Architecture: amd64
+Version: 0.1.0
+Priority: optional
+Section: base
+Maintainer: TheClockTwister
+Filename: ./debs/fwtest_0.1.0_amd64.deb
+Size: 6595176
+MD5sum: e543525c840d3543df087afca5aa88d2
+SHA1: e2ba35d6f7b2977c433fee874785930524c56ed8
+SHA256: e5d15e1a62f26cc438556eac7f9d3be8d9ec2b224b54faa3ddc2e0ebd72c18fa
+SHA512: fa03efea25d9b76f7173e7d4868ea026a2af6b51d138264d6f72ac912633894fcdffb887b18e2edfb810d8465121ac3cd40a3517d92556bbc0988843c8137869
+Description: A tool for evaluating NAT and filter rules of firewalls.
+
+Package: fwtest
+Architecture: arm64
+Version: 0.1.0
+Priority: optional
+Section: base
+Maintainer: TheClockTwister
+Filename: ./debs/fwtest_0.1.0_arm64.deb
+Size: 6591988
+MD5sum: 27032e6d7999d7e04c14e9ffb83ca3fd
+SHA1: b4be11e83b70850201a4f4e556d0b6caf23d996d
+SHA256: 300603a8db67275b6920ddb2ad83e95f9c02717a948271a61ae8ced43131db79
+SHA512: 5b8d9d542f974f12863fc98cd3240826b08d7bd10c6a8f1a5ede19dd8d70ce333141068f75c44592d7e403dc579d08ce09b93246113dc618ae91765a1c358341
+Description: A tool for evaluating NAT and filter rules of firewalls.
+
+Package: fwtest
+Architecture: armhf
+Version: 0.1.0
+Priority: optional
+Section: base
+Maintainer: TheClockTwister
+Filename: ./debs/fwtest_0.1.0_armhf.deb
+Size: 6594172
+MD5sum: 55ea7010d82bacc7254bee546d0f24cb
+SHA1: 89df6252981d664e911c7ea939e09702412b5a46
+SHA256: ec1cb82cb10dd7b503e4df9ee053bf551d4d6f71b7bba6ef88b4496c95c8b86a
+SHA512: 8bc1996bfde1f7ecf4bd91e4adb87a0b5bbcdb027fe99bb1685f769aacf537642277d83d5f886a9a9b69d2731640746112841949dd97faf436570a274c25ea2c
+Description: A tool for evaluating NAT and filter rules of firewalls.
+
+Package: fwtest
+Architecture: i386
+Version: 0.1.0
+Priority: optional
+Section: base
+Maintainer: TheClockTwister
+Filename: ./debs/fwtest_0.1.0_i386.deb
+Size: 6595176
+MD5sum: b99545087d44eb77a2c8944d651a65ce
+SHA1: 3bddbff4787e70b256d7963b9580986191bef4b4
+SHA256: 63dcff34394d575c2324ff0fb95a6edcac2a3942e10cfe68d83457c6d2b41cc2
+SHA512: fde3e2bd6d9c231ed8b7e5a44eb71a895d0979ef9b95f48d946bfea0b94dbca38e4235237cd65840a2ef565978ed96161f61389530a49ad804aa1376999ac0d7
+Description: A tool for evaluating NAT and filter rules of firewalls.
+
+Package: fwtest
+Architecture: s390x
+Version: 0.1.0
+Priority: optional
+Section: base
+Maintainer: TheClockTwister
+Filename: ./debs/fwtest_0.1.0_s390x.deb
+Size: 6597384
+MD5sum: edb9a32b6703cdace5086abf24c15c93
+SHA1: 0e81cc4544d18dcda0c9fd068ed7e1ba72fb92d9
+SHA256: cedcd639cf771b062964c8bf46e185dd2451ddba2b4290644d66ed479cef66de
+SHA512: 93cb64dac354e65afe0c587264a36cae0ee6381b5a50c9a66b50b4975740dbdc522fc872fea160cdf1f98cd944ff6ce06d3bd950ff32caa2227b814f3b341377
+Description: A tool for evaluating NAT and filter rules of firewalls.
+
+Package: gitkraken
+Architecture: amd64
+Version: 5.0.4
+Priority: optional
+Maintainer: Leon Wiesen
+Depends: gconf2
+Filename: ./debs/gitkraken_5.0.4_amd64.deb
+Size: 64913448
+MD5sum: d7643dbc0bc56b1c56f9b338de457beb
+SHA1: a345b5ac01676d0f39dc061dd8764d9184ae58e8
+SHA256: 01870e3b68861434b54fea45b2e74a6db2791b90cd26237c237407589dd19e93
+SHA512: f0a033b6a2d6f30250a5a0fd309d8daa5f0c8688f6a6015535ddfe9e879db5e16817556fc23eff108ed141d9b08b7416ecefb2703e8db12000f86bf3bb7960aa
+Description: The classic greeting, and a good example
+    The GNU hello program produces a familiar, friendly greeting.  It
+    allows nonprogrammers to use a classic computer science tool which
+    would otherwise be unavailable to them.
+
+Package: liblwac-dev
+Architecture: amd64
+Version: 1.0.0
+Priority: optional
+Section: devel
+Maintainer: Leon Wiesen
+Installed-Size: 548
+Filename: ./debs/liblwac-dev_1.0.0_amd64.deb
+Size: 105584
+MD5sum: 08b2ac0aeeb08f0f010823a4ba233cc4
+SHA1: 270d36a4a88660aaa6d2004ed5bc46e0af44668c
+SHA256: e298b3409d49374609541d75157b3855b9c7cab036fbd97f4e421ea0a4df2ce1
+SHA512: e443a55e38a24e7e46164ff6f4bae4c5d0706401a47a5e617867d65bf85426f4b89da70d0831c20c38e636d7eeeedbd60588e3faebeee82e958aefa7660dd88a
+Description: C++ code created during my university time in Aachen
+
+Package: liblwac-dev
+Architecture: arm64
+Version: 1.0.0
+Priority: optional
+Section: devel
+Maintainer: Leon Wiesen
+Installed-Size: 566
+Filename: ./debs/liblwac-dev_1.0.0_arm64.deb
+Size: 105336
+MD5sum: 10263c331a0a13b8a1df8893af5261eb
+SHA1: e54c67be66b8d4ad1b883b734b3955a2cee6f836
+SHA256: 5138c1eff404bef7cfc089b733b48b9d152f875297e71fb2594aec3b552f6232
+SHA512: 831c1839b40a5215768cc4751aef4828db028f7918e43e8202db1a7ede19b70063c0d414df6b4f07802083e2c8cb4bf9052226de4925ca13a42dd8bdea4f2b38
+Description: C++ code created during my university time in Aachen
+
+Package: liblwac-dev
+Architecture: armhf
+Version: 1.0.0
+Priority: optional
+Section: devel
+Maintainer: Leon Wiesen
+Installed-Size: 581
+Filename: ./debs/liblwac-dev_1.0.0_armhf.deb
+Size: 118364
+MD5sum: 9f79f3ad203a058884ae81ad48a51d98
+SHA1: e1ec023bbbb3b79a0678d36fdb1c1584ba4fbd5e
+SHA256: 9b79a8e9195f783b4df42938b1f2362fcb792a7b98acbe0bbd798afed2e33203
+SHA512: 4e7afe0632f93d70b31640e73d080160081eb06c4cfdefb3b71a6fdcaa30fd173a1ba8ac9560f4be04a8df090494ed98ddd89c7d7ac2b71b433c792dda28f410
+Description: C++ code created during my university time in Aachen
+
+Package: liblwac-dev
+Architecture: i386
+Version: 1.0.0
+Priority: optional
+Section: devel
+Maintainer: Leon Wiesen
+Installed-Size: 474
+Filename: ./debs/liblwac-dev_1.0.0_i386.deb
+Size: 108944
+MD5sum: 3829d7715ec254b19119c9bfadb2d380
+SHA1: b3604ca0a55f6677ffef0b1ff551b9a1eacd0ff2
+SHA256: 15d42050e03347bdfa7233b590c5f7c646d9ac0685eb1f97641159299521a0b8
+SHA512: 62846d535a3b17419222cc83d474772b209e4f6a7afcfa33f74da16e56561f821855982b561191ff891f8e47bdd65cf6a049d3076b7e1d5f9bda8302abd428a9
+Description: C++ code created during my university time in Aachen
+
+Package: liblwac
+Architecture: amd64
+Version: 1.0.0
+Priority: optional
+Section: devel
+Maintainer: Leon Wiesen
+Installed-Size: 185
+Filename: ./debs/liblwac_1.0.0_amd64.deb
+Size: 47798
+MD5sum: d6d9309a7de284c4f81eb670c6cf852f
+SHA1: f151e5321375f417d956af8e106131de43b2711c
+SHA256: 1950911c389233ee1e61a5b1995239f365eaa0a7028caa13f7913ddc60925ae5
+SHA512: 37bf10f5291d4d1ea20c82eb2c4173fb4504269e8db8942e87291bc9e6b2d0df678dc9b9a833380e4903abfe8235e025baee1e52b955f28da63cd35cc42a06b9
+Description: C++ code created during my university time in Aachen
+
+Package: liblwac
+Architecture: arm64
+Version: 1.0.0
+Priority: optional
+Section: devel
+Maintainer: Leon Wiesen
+Installed-Size: 192
+Filename: ./debs/liblwac_1.0.0_arm64.deb
+Size: 46250
+MD5sum: b1d7dc741211d1ade7c65bfddabea164
+SHA1: b674a9dbd0dca1ece9e046b584674b9c890882d0
+SHA256: 693fbd35926ee3ef703aea06eb0ab698c86bbbb8b4326bc6ed00500bf308e34a
+SHA512: fad66249736b468c17f46100d2d740a3d2abfbf0ae8a1ddda04ccfd9fad8b36135ecd7d89cd0ee7bf57c6ea8c8e04edd01d2e8476d73a47ab8199f137ed1b332
+Description: C++ code created during my university time in Aachen
+
+Package: liblwac
+Architecture: armhf
+Version: 1.0.0
+Priority: optional
+Section: devel
+Maintainer: Leon Wiesen
+Installed-Size: 154
+Filename: ./debs/liblwac_1.0.0_armhf.deb
+Size: 40810
+MD5sum: 68197915e711fc61454dd29963ac391b
+SHA1: d2257262463d54573c383d801c121b1295f4bf7f
+SHA256: daee244015456c5efa0a14b81ce6fcc962e6b414c2c6d5933f67dd458edb6409
+SHA512: 7fa7d33dddc84a85b5b8200660f992107f70b323231d909dc53019231cea2dad63f1f8d612be757b18ee99ae17e7f4c55a4eda2a8f5dd3e796c51377ad759cc4
+Description: C++ code created during my university time in Aachen
+
+Package: liblwac
+Architecture: i386
+Version: 1.0.0
+Priority: optional
+Section: devel
+Maintainer: Leon Wiesen
+Installed-Size: 169
+Filename: ./debs/liblwac_1.0.0_i386.deb
+Size: 50428
+MD5sum: a3f44b47e39a842e7181d2c6921bf8f1
+SHA1: 84a6b5be62907a5a6c315ea42f17951d3f5746c0
+SHA256: 6d4863cefbe9091036147321c08809dac6586a855b2d9835f2763b69fac640b3
+SHA512: ca0ea17fe23605dae655cd26b06d1154ff4b3cfc92347f9497395b075359f797dc901e277df9150f436fb6305a6caa66089170c7aad4a0bc5f858e82f5f87495
+Description: C++ code created during my university time in Aachen
+
+Package: tabby-terminal
+Architecture: amd64
+Version: 1.0.211
+Priority: optional
+Section: default
+Maintainer: Eugene Pankov <e@ajenti.org>
+Installed-Size: 390716
+Depends: gnome-keyring, libnotify4, libsecret-1-0, libxtst6, libnss3
+Recommends: libappindicator3-1
+Replaces: terminus-terminal
+Filename: ./debs/tabby-terminal_1.0.211_amd64.deb
+Size: 90631654
+MD5sum: f46a040e34c3e80b9328f671f7079e98
+SHA1: 69e4a8e524cc1624dd96a65984760e969d3a6e5f
+SHA256: ced0d64e256a8cbf20f73585d4c755071c5500f07b40fb3de8c31a62c6b5f1da
+SHA512: 8b29f42c6fe2f6bfeb630d9ec1a336fde3d6500ce19623b0da159676f926a4fb0d393de7ac397d64f004cfa47f88f5a849f4a401c94f0acbc3c708ec6ab1b93a
+Homepage: https://github.com/Eugeny/tabby#readme
+Description: 
+  A terminal for a modern age
+License: unknown
+Vendor: Eugene Pankov <e@ajenti.org>
+
+Package: tabby-terminal
+Architecture: arm64
+Version: 1.0.211
+Priority: optional
+Section: default
+Maintainer: Eugene Pankov <e@ajenti.org>
+Installed-Size: 397242
+Depends: gnome-keyring, libnotify4, libsecret-1-0, libxtst6, libnss3
+Recommends: libappindicator3-1
+Replaces: terminus-terminal
+Filename: ./debs/tabby-terminal_1.0.211_arm64.deb
+Size: 86242444
+MD5sum: 39cdb7bcf25d80422b27b79c6d026001
+SHA1: 69c63c7e01d6eee0ba3a70043935af04558763cd
+SHA256: 431f1f368ab2e806879f2cc830b9785916abc76e51b0d0ebafe8e260c48be5de
+SHA512: 92671d958cd8b7b29f869916c08eace7b008f9da5d76d814bf01b482fe3c66d205140e1c0d79653087add68f3560d16d736d45a919f0a1f638d570cd73557c55
+Homepage: https://github.com/Eugeny/tabby#readme
+Description: 
+  A terminal for a modern age
+License: unknown
+Vendor: Eugene Pankov <e@ajenti.org>
+
+Package: tabby-terminal
+Architecture: armhf
+Version: 1.0.211
+Priority: optional
+Section: default
+Maintainer: Eugene Pankov <e@ajenti.org>
+Installed-Size: 327605
+Depends: gnome-keyring, libnotify4, libsecret-1-0, libxtst6, libnss3
+Recommends: libappindicator3-1
+Replaces: terminus-terminal
+Filename: ./debs/tabby-terminal_1.0.211_armhf.deb
+Size: 83318144
+MD5sum: 31b48b86aeb148ce16f43020baa21d43
+SHA1: 43cb917c65a83c399df5735da2f2b6496cd0faba
+SHA256: 6fa7bda19e98b68a7469e5c7d6fa3655674d1afff6b4943147e0617426f67d4f
+SHA512: cd3081747cb11476eff915273606944957c5f7ad8bba710165a2ed522303e2b53e5a5c2a4aba1f9f1b3aad3bd7519c3ad400dec5db114f22fca3d1841ab147bc
+Homepage: https://github.com/Eugeny/tabby#readme
+Description: 
+  A terminal for a modern age
+License: unknown
+Vendor: Eugene Pankov <e@ajenti.org>
+

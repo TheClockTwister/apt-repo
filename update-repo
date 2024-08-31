@@ -12,7 +12,7 @@ print_step () {
   C=$((C+1))
 }
 
-cd /http
+cd ${REPO_DIR} # defined in Dockerfile
 
 # try to import the key
 gpg --import /private.key &> /dev/null

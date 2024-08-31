@@ -3,4 +3,4 @@ repo/
 *.key
 
 **/node_modules
-
+frontend/dist
